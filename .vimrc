@@ -141,7 +141,7 @@ autocmd! BufRead,BufNewFile,BufEnter,BufWinEnter,FileReadPost *.asciidoc call Ac
 set foldmethod=syntax
 set foldlevel=99
 
-let g:syntastic_cpp_include_dirs = ['/home/roel/project/wt/src', '/home/roel/local/include', '/opt/software/boost1_48/include', '/home/roel/project/wt/src/web']
+let g:syntastic_cpp_include_dirs = ['/home/roel/project/wt/src', '/home/roel/local/include', '/opt/software/boost_1_54_0/include', '/home/roel/project/wt/src/web']
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror=return-type'
 
 " Set VimCrypt to use Blowfish instead of the weaker default
