@@ -27,6 +27,7 @@ Plugin 'krisajenkins/vim-projectlocal' " Project local .vimrc files
 Plugin 'Lokaltog/vim-powerline' " Fancy status lines
 Plugin 'dahu/vim-asciidoc' " asciidoc support
 Plugin 'elzr/vim-json' " Better JSON support
+Plugin 'Konfekt/FastFold' " Fast fold for faster reading of large files
 
 call vundle#end()
 filetype plugin indent on
