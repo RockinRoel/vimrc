@@ -9,7 +9,7 @@ Plugin 'gmarik/Vundle.vim' " Vundle, duh!
 Plugin 'scrooloose/nerdtree' " NERDTree
 Plugin 'kien/ctrlp.vim' " Ctrl-P for quick fuzzy file opening
 Plugin 'majutsushi/tagbar' " tagbar
-Plugin 'scrooloose/syntastic' " Syntastic!
+" Plugin 'scrooloose/syntastic' " Syntastic!
 Plugin 'vim-scripts/AnsiEsc.vim' " AnsiEsc (interpret ANSI color escape sequences)
 Plugin 'flazz/vim-colorschemes' " More colorschemes
 Plugin 'vim-scripts/ScrollColors' " Scroll through colorschemes with :SCROLL
@@ -18,7 +18,7 @@ Plugin 'derekwyatt/vim-fswitch' " Switch between cpp and h files
 Plugin 'tpope/vim-fugitive' " Fugitive! Git + Vim goodness
 Plugin 'tpope/vim-surround' " Surround
 Plugin 'tpope/vim-repeat' " . support in more plugins (including surround)
-Plugin 'ervandew/supertab' " SuperTAB
+" Plugin 'ervandew/supertab' " SuperTAB
 Plugin 'benmills/vimux' " Vim<->Tmux interaction
 Plugin 'tejr/vim-tmux' " .tmux.conf syntax support
 Plugin 'christoomey/vim-tmux-navigator' " ctrl-hjkl
@@ -27,6 +27,7 @@ Plugin 'krisajenkins/vim-projectlocal' " Project local .vimrc files
 Plugin 'Lokaltog/vim-powerline' " Fancy status lines
 Plugin 'dahu/vim-asciidoc' " asciidoc support
 Plugin 'elzr/vim-json' " Better JSON support
+Plugin 'Valloric/YouCompleteMe' " You Complete Me
 
 call vundle#end()
 filetype plugin indent on
@@ -146,3 +147,5 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror=return-type'
 
 " Set VimCrypt to use Blowfish instead of the weaker default
 set cm=blowfish
+
+let g:ycm_extra_conf_globlist = ['~/project/iLoc/iloc/.ycm_extra_conf.py','~/project/iLoc/iloc-engine/.ycm_extra_conf.py']
