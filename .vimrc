@@ -28,6 +28,7 @@ Plugin 'Lokaltog/vim-powerline' " Fancy status lines
 Plugin 'dahu/vim-asciidoc' " asciidoc support
 Plugin 'elzr/vim-json' " Better JSON support
 Plugin 'Valloric/YouCompleteMe' " You Complete Me
+Plugin 'Konfekt/FastFold' " Fast fold for faster reading of large files
 
 call vundle#end()
 filetype plugin indent on
