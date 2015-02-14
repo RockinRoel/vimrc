@@ -30,6 +30,7 @@ Plugin 'elzr/vim-json' " Better JSON support
 Plugin 'Valloric/YouCompleteMe' " You Complete Me
 Plugin 'Konfekt/FastFold' " Fast fold for faster reading of large files
 Plugin 'SaltStack/salt-vim' " sls file support
+Plugin 'leafgarland/typescript-vim' " TypeScript support
 
 call vundle#end()
 filetype plugin indent on
