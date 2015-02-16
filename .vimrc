@@ -18,7 +18,7 @@ Plugin 'derekwyatt/vim-fswitch' " Switch between cpp and h files
 Plugin 'tpope/vim-fugitive' " Fugitive! Git + Vim goodness
 Plugin 'tpope/vim-surround' " Surround
 Plugin 'tpope/vim-repeat' " . support in more plugins (including surround)
-" Plugin 'ervandew/supertab' " SuperTAB
+Plugin 'ervandew/supertab' " SuperTAB
 Plugin 'benmills/vimux' " Vim<->Tmux interaction
 Plugin 'tejr/vim-tmux' " .tmux.conf syntax support
 Plugin 'christoomey/vim-tmux-navigator' " ctrl-hjkl
