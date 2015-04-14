@@ -25,12 +25,13 @@ Plugin 'christoomey/vim-tmux-navigator' " ctrl-hjkl
 Plugin 'mileszs/ack.vim' " Use ack from vim!
 Plugin 'krisajenkins/vim-projectlocal' " Project local .vimrc files
 Plugin 'Lokaltog/vim-powerline' " Fancy status lines
-Plugin 'dahu/vim-asciidoc' " asciidoc support
+Plugin 'dagwieers/asciidoc-vim' " asciidoc support
 Plugin 'elzr/vim-json' " Better JSON support
 Plugin 'Valloric/YouCompleteMe' " You Complete Me
 Plugin 'Konfekt/FastFold' " Fast fold for faster reading of large files
 Plugin 'SaltStack/salt-vim' " sls file support
 Plugin 'leafgarland/typescript-vim' " TypeScript support
+Plugin 'tpope/vim-sleuth'
 
 call vundle#end()
 filetype plugin indent on
@@ -151,4 +152,4 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror=return-type'
 " Set VimCrypt to use Blowfish instead of the weaker default
 set cm=blowfish
 
-let g:ycm_extra_conf_globlist = ['~/project/iLoc/iloc/.ycm_extra_conf.py','~/project/iLoc/iloc-engine/.ycm_extra_conf.py']
+let g:ycm_extra_conf_globlist = ['~/project/iLoc/iloc/.ycm_extra_conf.py','~/project/iLoc/iloc-engine/.ycm_extra_conf.py','~/project/bruker/interactive-charts/.ycm_extra_conf.py','~/project/wt/.ycm_extra_conf.py']
