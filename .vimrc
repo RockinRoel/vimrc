@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim' " Vundle, duh!
+Plugin 'VundleVim/Vundle.vim' " Vundle, duh!
 Plugin 'scrooloose/nerdtree' " NERDTree
 Plugin 'kien/ctrlp.vim' " Ctrl-P for quick fuzzy file opening
 Plugin 'majutsushi/tagbar' " tagbar
@@ -115,7 +115,7 @@ if ! has("gui_running")
   set t_ut=
 endif
 set background=dark
-colors Monokai
+colorscheme Monokai
 
 " Make sure we don't put byte order marks in files
 set nobomb
@@ -153,6 +153,8 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror=return-type'
 " Set VimCrypt to use Blowfish instead of the weaker default
 set cm=blowfish
 
+" let g:ycm_extra_conf_globlist = ['/home/roel/project/iLoc/iloc/.ycm_extra_conf.py','/home/roel/project/iLoc/iloc-engine/.ycm_extra_conf.py','/home/roel/project/bruker/interactive-charts/.ycm_extra_conf.py','/home/roel/project/wt/.ycm_extra_conf.py']
+let g:ycm_extra_conf_globlist = ['/home/roel/project/bruker/interactive-charts/.ycm_extra_conf.py','/home/roel/project/wt/.ycm_extra_conf.py','/home/roel/project/iLoc/iloc/.ycm_extra_conf.py']
 
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
