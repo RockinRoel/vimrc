@@ -20,7 +20,7 @@ Plugin 'tpope/vim-surround' " Surround
 Plugin 'tpope/vim-repeat' " . support in more plugins (including surround)
 Plugin 'ervandew/supertab' " SuperTAB
 Plugin 'benmills/vimux' " Vim<->Tmux interaction
-Plugin 'tejr/vim-tmux' " .tmux.conf syntax support
+Plugin 'tmux-plugins/vim-tmux' " .tmux.conf syntax support
 Plugin 'christoomey/vim-tmux-navigator' " ctrl-hjkl
 Plugin 'mileszs/ack.vim' " Use ack from vim!
 Plugin 'krisajenkins/vim-projectlocal' " Project local .vimrc files
