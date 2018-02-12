@@ -14,25 +14,25 @@ Plugin 'vim-scripts/AnsiEsc.vim' " AnsiEsc (interpret ANSI color escape sequence
 Plugin 'flazz/vim-colorschemes' " More colorschemes
 Plugin 'vim-scripts/ScrollColors' " Scroll through colorschemes with :SCROLL
 Plugin 'derekwyatt/vim-scala' " Scala syntax support
-Plugin 'derekwyatt/vim-fswitch' " Switch between cpp and h files
 Plugin 'tpope/vim-fugitive' " Fugitive! Git + Vim goodness
 Plugin 'tpope/vim-surround' " Surround
 Plugin 'tpope/vim-repeat' " . support in more plugins (including surround)
 Plugin 'ervandew/supertab' " SuperTAB
 Plugin 'benmills/vimux' " Vim<->Tmux interaction
-Plugin 'tejr/vim-tmux' " .tmux.conf syntax support
 Plugin 'christoomey/vim-tmux-navigator' " ctrl-hjkl
 Plugin 'mileszs/ack.vim' " Use ack from vim!
 Plugin 'krisajenkins/vim-projectlocal' " Project local .vimrc files
 Plugin 'Lokaltog/vim-powerline' " Fancy status lines
 Plugin 'dagwieers/asciidoc-vim' " asciidoc support
 Plugin 'elzr/vim-json' " Better JSON support
-Plugin 'Valloric/YouCompleteMe' " You Complete Me
+" Plugin 'Valloric/YouCompleteMe' " You Complete Me
 Plugin 'Konfekt/FastFold' " Fast fold for faster reading of large files
 Plugin 'SaltStack/salt-vim' " sls file support
 Plugin 'leafgarland/typescript-vim' " TypeScript support
 Plugin 'tpope/vim-sleuth'
 Plugin 'fidian/hexmode' " Hex editing
+Plugin 'othree/xml.vim' " XML editing
+Plugin 'editorconfig/editorconfig-vim' " .editorconfig support
 
 call vundle#end()
 filetype plugin indent on
@@ -41,7 +41,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set smarttab
+set expandtab
 set autoindent
 " syntax highlighting
 syntax on
@@ -154,9 +154,11 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror=return-type'
 set cm=blowfish
 
 " let g:ycm_extra_conf_globlist = ['/home/roel/project/iLoc/iloc/.ycm_extra_conf.py','/home/roel/project/iLoc/iloc-engine/.ycm_extra_conf.py','/home/roel/project/bruker/interactive-charts/.ycm_extra_conf.py','/home/roel/project/wt/.ycm_extra_conf.py']
-let g:ycm_extra_conf_globlist = ['/home/roel/project/bruker/interactive-charts/.ycm_extra_conf.py','/home/roel/project/wt/.ycm_extra_conf.py','/home/roel/project/iLoc/iloc/.ycm_extra_conf.py']
+" let g:ycm_extra_conf_globlist = ['/home/roel/project/wt/git/wt/.ycm_extra_conf.py','/home/roel/project/wt/git/wt4/.ycm_extra_conf.py']
 
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
+
+let g:EditorConfig_exlude_patterns = ['fugitive://.*']
 
 nnoremap <Leader>g :YcmCompleter GoTo<CR>
